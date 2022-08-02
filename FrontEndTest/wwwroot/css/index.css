@@ -1,0 +1,23 @@
+ul {
+  list-style: none;
+}
+
+.deleteBtn {
+  color: red;
+  background-color: transparent;
+  border: transparent;
+  margin-left: 10px;
+  font-size: medium;
+  font-weight: 700;
+  border-radius: 64%;
+  width: 15px;
+  padding: 0px;
+}
+
+.error {
+  border-color: red;
+}
+
+.red {
+  color: red;
+}

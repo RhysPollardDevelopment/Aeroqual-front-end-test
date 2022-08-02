@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!---bootstrap CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- CSS styling -->
+    <link rel="stylesheet" href="css\index.css" type="text/css" />
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/index.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body class="container">
+    <div class="row">
+      <h1 class="col-12 text-center pt-5 mb-5">E Society's Member Registry</h1>
+      <ul
+        id="membersList"
+        class="col-12 d-grid justify-content-center mb-5"
+      ></ul>
+      <form id="addForm" class="text-center d-grid justify-content-center">
+        <h4 class="mb-3">Add member</h4>
+        <div class="input-group">
+          <label for="name" class="input-group-text">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            maxlength="255"
+            required
+          />
+          <label for="age" class="input-group-text">Age</label>
+          <input type="number" class="form-control" id="age" required min="0" />
+        </div>
+        <input
+          type="button"
+          class="btn btn-primary btn-lg mt-3"
+          value="Add"
+          onclick="addMember()"
+        />
+      </form>
+      <p class="text-center mt-2 red">
+        Press the red X to remove any members from the E society.
+      </p>
+    </div>
+  </body>
+</html>
